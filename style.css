@@ -1,0 +1,76 @@
+/* 기본 설정 */
+body {
+  margin: 0;
+  font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 전체 박스 */
+.container {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.15);
+}
+
+/* 제목 */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+/* 버튼 영역 */
+.buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* 버튼 디자인 */
+button {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.4);
+  color: white;
+  padding: 15px 22px;
+  border-radius: 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: rgba(0, 255, 255, 0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+}
+
+/* 선택된 버튼 */
+button.active {
+  background: rgba(0, 255, 255, 0.35);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.9);
+}
+
+/* 영상 박스 */
+.video-box {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 15px;
+  border: 2px solid rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.4);
+}
