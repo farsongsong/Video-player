@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>예시 영상</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🎥 예시 영상</h1>
+
+  <div class="buttons">
+    <button onclick="showVideo('path')">자율 경로 설정</button>
+    <button onclick="showVideo('sensor')">초음파 + 색인식</button>
+    <button onclick="showVideo('drive')">주행</button>
+  </div>
+
+  <div class="video-box">
+    <video id="videoPlayer" controls>
+      <source src="" type="video/mp4">
+      브라우저가 영상을 지원하지 않습니다.
+    </video>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
